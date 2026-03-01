@@ -17,7 +17,7 @@ export default function TimelineItem({ activity }: TimelineItemProps) {
       <div className="relative pl-10">
         <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-purple-200"></div>
 
-        <div className="absolute left-2 top-2 w-4 h-4 bg-purple-600 rounded-full border-2 border-white shadow"></div>
+        <div className="absolute left-2 top-2 w-4 h-4 bg-blue-600 rounded-full border-2 border-white shadow"></div>
 
         <div className="bg-gray-50 rounded-xl p-4 shadow-sm">
           <div className="font-semibold text-gray-800">{activity.name}</div>

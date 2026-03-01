@@ -24,7 +24,7 @@ export default function SummaryCards({ plan }: Props) {
 
         <div className="bg-white rounded-2xl shadow p-4">
           <div className="text-gray-500 text-sm">Distance</div>
-          <div className="text-lg font-semibold">
+          <div className="text-lg text-black font-semibold">
             {plan.totalDistanceKm} km total walking
           </div>
         </div>

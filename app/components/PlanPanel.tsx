@@ -29,7 +29,7 @@ type Props = {
 export default function PlanPanel({ plan }: Props) {
   return (
     <div className="bg-white rounded-2xl shadow-md p-6 h-full overflow-y-auto">
-      <h1 className="text-xl font-semibold mb-4 flex items-center justify-between">
+      <h1 className="text-black font-semibold mb-4 flex items-center justify-between">
         Current Plan
         {plan && (
           <span

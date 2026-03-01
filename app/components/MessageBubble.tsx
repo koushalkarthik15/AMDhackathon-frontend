@@ -13,8 +13,8 @@ export default function MessageBubble({ role, text }: MessageBubbleProps) {
           max-w-xs px-4 py-2 rounded-2xl text-sm
           ${
             isUser
-              ? "bg-purple-600 text-white rounded-br-md"
-              : "bg-gray-100 text-gray-800 rounded-bl-md"
+              ? "bg-blue-600 text-black rounded-br-md"
+              : "bg-black-100 text-black-800 rounded-bl-md"
           }
         `}
       >
