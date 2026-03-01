@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chatbot-Driven Smart Planner System – Frontend
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The frontend provides a modern conversational interface for generating personalized activity plans.
 
-```bash
+It connects to the backend API and visualizes:
+- Chat conversation
+- Suggestions
+- Optimized activity timeline
+- Cost and distance summary
+- Plan status
+
+---
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- React Hooks
+
+---
+
+## Project Structure
+
+app/
+│
+├── page.tsx
+├── layout.tsx
+│
+├── components/
+│   ├── ChatPanel.tsx
+│   ├── MessageBubble.tsx
+│   ├── SuggestionChips.tsx
+│   ├── PlanPanel.tsx
+│   ├── TimelineItem.tsx
+│   └── SummaryCards.tsx
+│
+├── types/
+│   └── chat.ts
+
+---
+
+## UI Architecture
+
+### Left Panel – Chat Interface
+- User & assistant message bubbles
+- Suggestion chips
+- Auto-scroll
+- Loading indicator
+
+### Right Panel – Plan Display
+- Plan status badge
+- Timeline view
+- Cost summary
+- Accessibility information
+- Reasoning explanation
+
+---
+
+## State Management
+
+Managed using React hooks:
+
+- messages
+- plan
+- suggestions
+- loading
+- sessionId (persistent via useRef)
+
+No external state management library required.
+
+---
+
+## Backend Integration
+
+Connects to:
+
+POST http://localhost:5000/chat
+
+Handles:
+- Chat reply
+- Plan object
+- Suggestions
+- Regeneration
+
+---
+
+## Running the Frontend
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App runs on:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## UI Features
 
-## Learn More
+- Two-panel responsive layout
+- Modern chat bubble styling
+- Timeline visualization
+- Dynamic plan updates
+- Smooth transitions
+- Loading indicator animation
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design Principles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Clean SaaS-style layout
+- Strong type safety (TypeScript)
+- Modular component architecture
+- Clear separation of UI & logic
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Limitations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Requires backend running
+- No authentication
+- No persistent chat history
+- No dark mode
+
+---
+
+## Future Enhancements
+
+- Dark mode toggle
+- Animations (Framer Motion)
+- Map preview
+- Plan comparison mode
+- Mobile optimization
