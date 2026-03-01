@@ -22,25 +22,7 @@ It connects to the backend API and visualizes:
 
 ---
 
-## Project Structure
 
-app/
-│
-├── page.tsx
-├── layout.tsx
-│
-├── components/
-│   ├── ChatPanel.tsx
-│   ├── MessageBubble.tsx
-│   ├── SuggestionChips.tsx
-│   ├── PlanPanel.tsx
-│   ├── TimelineItem.tsx
-│   └── SummaryCards.tsx
-│
-├── types/
-│   └── chat.ts
-
----
 
 ## UI Architecture
 
